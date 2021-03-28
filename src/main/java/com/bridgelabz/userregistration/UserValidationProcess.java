@@ -25,5 +25,13 @@ public class UserValidationProcess {
             return false;
     }
 
+    public boolean validMobileNo(String MobileNo) {
+        String pattern = "^([0-9]{2})[ ]([1-9]{1}[0-9]{9})$";
+        if (MobileNo.matches(pattern))
+            return true;
+
+        else
+            return false;
+    }
 
 }
