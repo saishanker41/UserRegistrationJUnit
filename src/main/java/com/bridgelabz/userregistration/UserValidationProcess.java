@@ -1,4 +1,5 @@
 package com.bridgelabz.userregistration;
+import java.lang.String;
 
 public class UserValidationProcess {
     public boolean validateFirstName(String name) {
@@ -52,6 +53,14 @@ public class UserValidationProcess {
             return false;
     }
 
+    public boolean validateAlteastOneNumber(String password) {
+        String pattern = "^(.*[A-Z]{1,}[0-9]{1,}[A-Za-z0-9]{6,})$";
+        if (password.matches(pattern))
+            return true;
+
+        else
+            return false;
+    }
 
 
 }
