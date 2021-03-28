@@ -35,12 +35,23 @@ public class UserValidationProcess {
     }
 
     public boolean validPassword(String Password) {
-        String pattern = "^([a-zA-Z0-9]{8,}$";
+        String pattern = "^([a-zA-Z0-9]{8,})$";
         if (Password.matches(pattern))
             return true;
 
         else
             return false;
     }
+
+    public boolean validPasswordAtleastOneUpperCase(String Password) {
+        String pattern = "^(.*[A-Z]{1}[A-Za-z0-9]{7,})$";
+        if (Password.matches(pattern))
+            return true;
+
+        else
+            return false;
+    }
+
+
 
 }
