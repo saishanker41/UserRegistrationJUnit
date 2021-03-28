@@ -71,4 +71,11 @@ public class UserValidationProcess {
             return false;
     }
 
+    public String analyseMode(String message) {
+        if (message.contains("SAD"))
+            return "SAD";
+        else
+            return "HAPPY";
+    }
+
 }
