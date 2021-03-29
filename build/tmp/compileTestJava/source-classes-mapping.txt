@@ -1,0 +1,4 @@
+com/bridgelabz/userregistration/EmailParameterizedTest.java
+ com.bridgelabz.userregistration.EmailParameterizedTest
+com/bridgelabz/userregistration/Test.java
+ com.bridgelabz.userregistration.Test
