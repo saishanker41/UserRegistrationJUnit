@@ -10,27 +10,27 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_WhenFirstNameStartsWithCapitalLetter_ShouldReturn_True() {
 
-        boolean result = userValidationProcess.validateFirstName("Prajakta");
+        boolean result = userValidationProcess.validateFirstName("Saishanker");
         Assertions.assertTrue(result);
     }
 
     @Test
     public void givenFirstName_WhenFirstNameInLowerCase_ShouldReturn_false() {
 
-        boolean result = userValidationProcess.validateFirstName("prajakta");
+        boolean result = userValidationProcess.validateFirstName("saishanker");
         Assertions.assertFalse(result);
     }
 
     @Test
     public void givenFirstName_WhenFirstNameStartHaveMinThreeLetters_ShouldReturn_True() {
 
-        boolean result = userValidationProcess.validateFirstName("Pra");
+        boolean result = userValidationProcess.validateFirstName("sai");
         Assertions.assertTrue(result);
     }
     @Test
     public void givenFirstName_WhenFirstNameStartWithLessThanThreeLetters_ShouldReturn_False() {
 
-        boolean result = userValidationProcess.validateFirstName("Pr");
+        boolean result = userValidationProcess.validateFirstName("sa");
         Assertions.assertFalse(result);
     }
 
